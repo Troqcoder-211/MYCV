@@ -362,10 +362,10 @@ position: relative;
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    gap: 3.5rem;
 }
 .service-box {
-    height: 460px;
+    height: 560px;
     background-color: var(--main-color);
     border-radius: 3rem;
     border: 5px solid var(--bg-color);
@@ -611,4 +611,31 @@ position: relative;
         grid-template-columns: repeat(1,1fr);
     }
 
+    .service-box .service-info p span{
+        margin:6px;
+    }
+    .service-box .service-info p{
+        margin:6px;
+    }
+
+
 }
+/* Responsive fix for small screens */
+@media (max-width: 500px) {
+    .services-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .service-box {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  
+    .service-info p {
+      font-size: 10px;
+      line-height: 1.5;
+    }
+  }
+  
